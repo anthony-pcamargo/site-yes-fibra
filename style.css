@@ -393,4 +393,14 @@ body {
 @media (max-width: 390px) {
   .popular-badge { top: -12px; font-size: .75rem; }
   .tab-btn { padding: .5rem .75rem; }
+
+  /* ===================== */
+/*   MOBILE FRIENDLY UI  */
+/* ===================== */
+@media (max-width: 1024px) { ... }
+@media (max-width: 768px)  { ... }
+@media (max-width: 400px)  { ... }
+
+.hero-slide-content { text-align: center; }
+
 }
