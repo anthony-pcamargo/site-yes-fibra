@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Termos de Serviço - Yes!fibra</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Lucide Icons (Necessário para os ícones) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        // Configuração do Tailwind (mesma do site principal)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            '500': '#002D5A', // Azul Escuro Principal
+                            '600': '#001F3D',
+                        },
+                        'accent': {
+                            '500': '#FF6600', // Laranja Vibrante
+                            '600': '#E65C00', 
+                        }
+                    },
+                },
+            },
+            darkMode: 'class', 
+        }
+    </script>
+    
+    <style>
+        /* Fundo escuro padrão */
+        body {
+            background-color: #0f141a;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Card de conteúdo principal */
+        .content-card {
+            background-color: #161b22; /* Fundo dos cards do site principal */
+            border: 1px solid #30363d; /* Borda sutil */
+        }
+
+        /* Estilização "Prose" para o texto legal (melhora a legibilidade) */
+        .prose-dark h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem; /* 40px */
+            font-weight: 800;
+            color: #f8fafc; /* slate-50 */
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem; /* 24px */
+            font-weight: 700;
+            color: #FF6600; /* Laranja (accent-500) */
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+        .prose-dark h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem; /* 20px */
+            font-weight: 600;
+            color: #f1f5f9; /* slate-100 */
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark p {
+            font-size: 1rem; /* 16px */
+            line-height: 1.75; /* leading-relaxed */
+            color: #cbd5e1; /* slate-300 */
+            margin-bottom: 1.25rem;
+        }
+        .prose-dark ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #cbd5e1; /* slate-300 */
+            margin-bottom: 1.25rem;
+        }
+        .prose-dark li {
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark a {
+            color: #FF6600; /* Laranja (accent-500) */
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .prose-dark a:hover {
+            text-decoration: underline;
+            color: #E65C00; /* Laranja mais escuro */
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+<!-- 
+  HEADER SIMPLIFICADO
+-->
+<header class="sticky top-0 z-50 bg-primary-500/95 backdrop-blur-sm shadow-xl border-b border-primary-600">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <!-- Logo -->
+            <a href="yesfibra.html" class="flex items-center space-x-2" aria-label="Yes!fibra - Página Inicial">
+                <span class="font-display text-3xl font-bold text-white tracking-wide">Yes!<span class="text-accent-500">fibra</span></span>
+            </a>
+            
+            <!-- Botão Voltar -->
+            <a href="yesfibra.html" class="flex items-center text-sm font-bold bg-gray-700/50 text-white px-5 py-2.5 rounded-full shadow-md hover:bg-gray-700 transition-all duration-300">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Voltar ao Site
+            </a>
+        </div>
+    </nav>
+</header>
+
+<!-- 
+  CONTEÚDO PRINCIPAL (Termos)
+-->
+<main class="py-16 sm:py-24">
+    <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <!-- Card de Conteúdo -->
+        <div class="content-card rounded-2xl shadow-2xl p-8 md:p-12 lg:p-16">
+            <div class="prose-dark">
+                
+                <h1>Termos de Serviço</h1>
+                <p class="text-base text-gray-400">Última atualização: 29 de Outubro de 2025</p>
+
+                <p>Bem-vindo à Yes!fibra. Estes Termos de Serviço ("Termos") regem o uso dos nossos serviços de internet banda larga e quaisquer outros serviços relacionados fornecidos pela Yes!fibra (Razão Social aqui).</p>
+                <p>Ao contratar, instalar ou utilizar nossos serviços, você ("Cliente") concorda em cumprir integralmente estes Termos e nossa <a href="politica.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.</p>
+
+                <h2>1. Definições e Aceitação</h2>
+                <p>O "Serviço" refere-se ao fornecimento de acesso à internet banda larga via fibra óptica, bem como equipamentos (como modems e roteadores) fornecidos em regime de comodato, e serviços de suporte técnico.</p>
+                <p>Ao assinar o contrato de adesão, você declara ser maior de 18 anos e ter capacidade legal para celebrar este contrato.</p>
+
+                <h2>2. Nossos Serviços</h2>
+                <h3>2.1. Velocidade do Plano</h3>
+                <p>A Yes!fibra se compromete a entregar a velocidade de download e upload conforme o plano contratado. No entanto, as velocidades podem variar devido a fatores externos, como:
+                    <ul>
+                        <li>Limitações do dispositivo do Cliente (computador, celular, etc.).</li>
+                        <li>Qualidade da rede Wi-Fi interna (distância do roteador, interferências).</li>
+                        <li>Congestionamento em sites ou servidores de destino na internet.</li>
+                    </ul>
+                </p>
+                <h3>2.2. Instalação e Equipamentos</h3>
+                <p>A instalação será agendada e realizada por uma equipe técnica autorizada. Os equipamentos fornecidos (modem/roteador) são de propriedade da Yes!fibra e cedidos em regime de comodato (empréstimo gratuito). O Cliente é responsável por zelar pelos equipamentos e deve devolvê-los em perfeitas condições ao término do contrato.</p>
+
+                <h2>3. Obrigações do Cliente</h2>
+                <h3>3.1. Pagamentos e Faturamento</h3>
+                <p>O Cliente concorda em pagar a mensalidade do plano contratado na data de vencimento estipulada. O não pagamento na data correta pode acarretar em multas, juros e a suspensão temporária do serviço. Após um período de 30 (trinta) dias de inadimplência, o serviço poderá ser cancelado definitivamente, e o nome do Cliente poderá ser inscrito nos órgãos de proteção ao crédito.</p>
+                
+                <h3>3.2. Política de Uso Aceitável</h3>
+                <p>O Cliente concorda em não utilizar o Serviço para fins ilícitos ou abusivos, incluindo, mas não se limitando a:
+                    <ul>
+                        <li>Distribuir malware, vírus ou realizar ataques de negação de serviço (DDoS).</li>
+                        <li>Violar direitos autorais (ex: compartilhamento ilegal de arquivos).</li>
+                        <li>Transmitir ou armazenar material ilegal, difamatório ou fraudulento.</li>
+                        <li>Revender ou compartilhar a conexão com terceiros sem autorização expressa da Yes!fibra.</li>
+                    </ul>
+                </p>
+
+                <h2>4. Limitação de Responsabilidade</h2>
+                <p>A Yes!fibra não se responsabiliza por interrupções do serviço causadas por força maior (ex: desastres naturais, rompimento de cabos por terceiros, falhas de energia elétrica) ou por manutenções programadas necessárias para a melhoria da rede, que serão comunicadas com antecedência sempre que possível.</p>
+                <p>Nossa responsabilidade limita-se ao valor da mensalidade proporcional ao período em que o serviço ficou indisponível por falha comprovada em nossa rede.</p>
+
+                <h2>5. Vigência, Fidelidade e Cancelamento</h2>
+                <p>Nossos planos promocionais (com instalação gratuita ou descontos na mensalidade) estão sujeitos a um período de fidelidade de 12 (doze) meses.</p>
+                <p>Em caso de cancelamento solicitado pelo Cliente antes do término do período de fidelidade, será cobrada uma multa rescisória proporcional ao tempo restante de contrato e aos benefícios concedidos, conforme estipulado no Contrato de Adesão.</p>
+
+                <h2>6. Alterações Nestes Termos</h2>
+                <p>A Yes!fibra reserva-se o direito de alterar estes Termos a qualquer momento. Notificaremos os Clientes sobre mudanças significativas através de e-mail, aviso na fatura ou em nosso site oficial. O uso continuado do serviço após tais alterações constitui aceitação dos novos Termos.</p>
+
+                <h2>7. Contato</h2>
+                <p>Para qualquer dúvida relacionada a estes Termos de Serviço, entre em contato conosco através do e-mail <a href="mailto:contato@yesfibra.com.br">contato@yesfibra.com.br</a> ou pelo nosso canal de <a href="https://wa.me/5500999998888" target="_blank" rel="noopener noreferrer">Suporte via WhatsApp</a>.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- 
+  FOOTER SIMPLIFICADO
+-->
+<footer class="bg-primary-600 border-t-4 border-accent-500 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-sm text-gray-500">&copy; <span id="current-year"></span> Yes!fibra (Razão Social aqui) - CNPJ 00.000.000/0001-00. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. Inicializa Ícones do Lucide
+        try {
+            lucide.createIcons();
+        } catch (e) {
+            console.error("Erro ao inicializar Lucide Icons:", e);
+        }
+
+        // 2. Define o ano atual no footer
+        const currentYearEl = document.getElementById('current-year');
+        if (currentYearEl) {
+            currentYearEl.textContent = new Date().getFullYear();
+        }
+    });
+</script>
+
+</body>
+</html>

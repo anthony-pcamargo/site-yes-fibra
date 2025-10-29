@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes!fibra - Internet 100% Fibra (Estilo Claro)</title>
+    <meta name="description" content="Conheça os planos de internet fibra da Yes!fibra. Ultravelocidade e estabilidade para você navegar, jogar e assistir.">
+    <meta name="keywords" content="fibra óptica, internet fibra, banda larga, internet rápida, TV por assinatura, São Paulo, provedora de internet">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        /* Tailwind config tem que ficar antes de usar Tailwind */
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            500: '#002D5A',
+                            600: '#001F3D',
+                        },
+                        accent: {
+                            500: '#FF6600',
+                            600: '#E65C00',
+                        },
+                        orange: {
+                            400: '#FFA500',
+                        }
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased font-sans">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-primary-500/95 backdrop-blur-sm shadow-xl border-b border-primary-600">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#" class="flex items-center space-x-2" aria-label="Yes!fibra - Página Inicial">
+                    <span class="font-display text-3xl font-bold text-white tracking-wide">
+                        Yes!<span class="text-accent-500">fibra</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Navegação desktop -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                <a href="#planos" class="font-semibold text-gray-200 hover:text-accent-500 transition-colors duration-300">Planos</a>
+                <a href="#beneficios" class="font-semibold text-gray-200 hover:text-accent-500 transition-colors duration-300">Benefícios</a>
+                <a href="#faq" class="font-semibold text-gray-200 hover:text-accent-500 transition-colors duration-300">Dúvidas</a>
+                <a href="https://wa.me/5500999998888?text=Olá!%20Preciso%20de%20suporte%20com%20minha%20internet%20Yes!fibra."
+                   target="_blank" rel="noopener noreferrer"
+                   class="font-semibold text-gray-200 hover:text-accent-500 transition-colors duration-300">
+                   Suporte
+                </a>
+
+                <button id="location-button"
+                        class="flex items-center text-sm font-bold bg-accent-500 text-white px-5 py-2.5 rounded-full shadow-md hover:bg-accent-600 hover:shadow-lg transition-all duration-300">
+                    <i data-lucide="map-pin" class="w-4 h-4 mr-2"></i>
+                    Verificar Cobertura
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+    <!-- HERO CAROUSEL -->
+    <section id="hero" class="relative bg-primary-600">
+        <!-- brilhos decorativos -->
+        <span class="hero-deco hero-deco--left"></span>
+        <span class="hero-deco hero-deco--right"></span>
+        <div class="bg-noise" aria-hidden="true"></div>
+
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide"
+                     style="background-image: url('https://placehold.co/1920x1080/002D5A/11151C?text=Lar+Moderno');"
+                     onerror="this.style.backgroundImage=''">
+                    <div class="hero-slide-content max-w-3xl mx-auto">
+                        <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                            O plano perfeito <span class="text-accent-500">existe</span>.
+                        </h1>
+                        <p class="text-xl sm:text-2xl text-slate-200 mb-10 max-w-xl mx-auto">
+                            Escolha a velocidade que mais combina com a sua casa. 100% fibra óptica e estabilidade Yes!
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                            <a href="#planos" id="hero-planos-button" class="btn-primary w-full sm:w-auto">
+                                Ver Planos
+                            </a>
+                            <a href="#beneficios" class="btn-secondary w-full sm:w-auto">
+                                Ver Benefícios
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide"
+                     style="background-image: url('https://placehold.co/1920x1080/FF6600/11151C?text=Streaming+e+Games');"
+                     onerror="this.style.backgroundImage='https://placehold.co/1920x1080/001F3D/161b22?text=Yes!Fibra+Slide+2'">
+                    <div class="hero-slide-content max-w-3xl mx-auto">
+                        <h2 class="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                            Fibra 800 MEGA <span class="text-accent-500">+ SKY+</span>
+                        </h2>
+                        <p class="text-xl sm:text-2xl text-slate-200 mb-10 max-w-xl mx-auto">
+                            O melhor da internet com os maiores canais e streamings premium.
+                        </p>
+                        <a href="#planos" id="hero-combo-button" class="btn-primary">
+                            Conhecer Combo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Swiper UI -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev hidden sm:flex"></div>
+            <div class="swiper-button-next hidden sm:flex"></div>
+        </div>
+    </section>
+
+    <!-- COBERTURA / CEP -->
+    <section id="cobertura" class="py-16 sm:py-24">
+        <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="section-title text-3xl sm:text-4xl mb-4">Verifique a cobertura no seu CEP</h2>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                Atendemos em <strong>todo o estado de São Paulo</strong>. Digite seu CEP para encontrar o endereço e confirmar a disponibilidade.
+            </p>
+
+            <form id="cep-form" class="max-w-lg mx-auto flex flex-col sm:flex-row gap-4 items-start">
+                <div class="w-full">
+                    <label for="cep-input" class="sr-only">Digite seu CEP</label>
+                    <input type="tel" id="cep-input" name="cep" placeholder="00000-000" required>
+                    <p id="cep-error" class="text-red-400 text-left mt-2 text-sm hidden"></p>
+                </div>
+                <button type="submit" id="cep-submit-button"
+                        class="btn-primary w-full sm:w-auto flex-shrink-0 text-base py-4 px-8">
+                    <span id="cep-submit-text">Verificar</span>
+                    <svg id="cep-loading-spinner"
+                         class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24">
+                        <circle class="opacity-25"
+                                cx="12" cy="12" r="10"
+                                stroke="currentColor"
+                                stroke-width="4"></circle>
+                        <path class="opacity-75"
+                              fill="currentColor"
+                              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                </button>
+            </form>
+
+            <div id="cep-result-message"
+                 class="cep-box mt-8 p-6 rounded-lg text-left max-w-lg mx-auto hidden bg-gray-800 border border-gray-700">
+                <!-- JS injeta aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section id="planos" class="py-16 sm:py-24">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <!-- Tabs de planos -->
+            <div class="tabs-wrap mb-12">
+                <button class="tab-btn active text-lg font-display font-bold" data-tab="internet">
+                    <i data-lucide="wifi" class="w-5 h-5 mr-2 inline-block"></i> Internet Fibra
+                </button>
+                <button class="tab-btn text-lg font-display font-bold" data-tab="internet-tv">
+                    <i data-lucide="tv" class="w-5 h-5 mr-2 inline-block"></i> Internet + TV
+                </button>
+                <button class="tab-btn text-lg font-display font-bold" data-tab="internet-movel">
+                    <i data-lucide="smartphone" class="w-5 h-5 mr-2 inline-block"></i> Internet + Móvel
+                </button>
+            </div>
+
+            <!-- Conteúdo aba: Internet Fibra -->
+            <div id="tab-internet" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Plano 35 Mega -->
+                    <div class="scroll-reveal card rounded-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-display text-3xl font-bold text-white mb-2">35 MEGA</h3>
+                            <p class="text-gray-400 mb-6 text-sm">O essencial para navegar e usar redes sociais.</p>
+
+                            <div class="mb-6 flex items-baseline">
+                                <span class="text-xl font-medium text-gray-400 mr-1 self-start pt-2">R$</span>
+                                <span class="font-display text-6xl leading-none font-bold text-white">59</span>
+                                <span class="text-xl font-medium text-gray-400 self-end pb-1">,90/mês</span>
+                            </div>
+
+                            <ul class="space-y-3 mb-8 text-gray-300">
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    100% Fibra Óptica
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    20 Mega de Upload
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    Wi-Fi Grátis
+                                </li>
+                            </ul>
+
+                            <div class="mb-8 p-4 bg-gray-900 rounded-lg min-h-[140px]">
+                                <h4 class="font-bold text-white mb-3">Apps Inclusos:</h4>
+                                <div class="flex space-x-2">
+                                    <div class="flex flex-col items-center text-center">
+                                        <img src="https://placehold.co/40x40/002D5A/FFFFFF?text=EDU"
+                                             alt="Logo Leveduca"
+                                             title="Leveduca Cursos"
+                                             class="w-10 h-10 rounded-full">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">LEVEDUCA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Tenho%20interesse%20no%20plano%20de%2035%20MEGA%20por%20R$59,90."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-primary w-full block mt-4 text-sm py-3">
+                            Contratar Agora
+                        </a>
+                    </div>
+
+                    <!-- Plano 400 Mega (Popular) -->
+                    <div class="scroll-reveal relative card card-popular rounded-2xl shadow-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <span class="popular-badge bg-accent-500 text-white font-bold text-sm px-4 py-1 rounded-full shadow-lg">
+                                MAIS POPULAR
+                            </span>
+
+                            <h3 class="font-display text-3xl font-bold text-accent-500 mb-2">400 MEGA</h3>
+                            <p class="text-gray-400 mb-6 text-sm">Ideal para streaming em 4K e múltiplos dispositivos.</p>
+
+                            <div class="mb-6 flex items-baseline">
+                                <span class="text-xl font-medium text-gray-400 mr-1 self-start pt-2">R$</span>
+                                <span class="font-display text-6xl leading-none font-bold text-white">79</span>
+                                <span class="text-xl font-medium text-gray-400 self-end pb-1">,90/mês</span>
+                            </div>
+
+                            <ul class="space-y-3 mb-6 text-gray-300">
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    100% Fibra Óptica
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    200 Mega de Upload
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    Roteador Wi-Fi 5G
+                                </li>
+                            </ul>
+
+                            <div class="mb-8 p-4 bg-gray-900 rounded-lg min-h-[140px]">
+                                <h4 class="font-bold text-white mb-3">Apps Inclusos:</h4>
+                                <div class="flex space-x-2">
+                                    <div class="flex flex-col items-center text-center">
+                                        <img src="https://placehold.co/40x40/002D5A/FFFFFF?text=EDU"
+                                             alt="Logo Leveduca"
+                                             title="Leveduca Cursos"
+                                             class="w-10 h-10 rounded-full">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">LEVEDUCA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Tenho%20interesse%20no%20plano%20de%20400%20MEGA%20por%20R$79,90."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-primary w-full block mt-4 text-sm py-3">
+                            Contratar Agora
+                        </a>
+                    </div>
+
+                    <!-- Plano 600 Mega -->
+                    <div class="scroll-reveal card rounded-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-display text-3xl font-bold text-white mb-2">600 MEGA</h3>
+                            <p class="text-gray-400 mb-6 text-sm">Para gamers e casas muito conectadas.</p>
+
+                            <div class="mb-6 flex items-baseline">
+                                <span class="text-xl font-medium text-gray-400 mr-1 self-start pt-2">R$</span>
+                                <span class="font-display text-6xl leading-none font-bold text-white">99</span>
+                                <span class="text-xl font-medium text-gray-400 self-end pb-1">,90/mês</span>
+                            </div>
+
+                            <ul class="space-y-3 mb-6 text-gray-300">
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    100% Fibra Óptica
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    300 Mega de Upload
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    Roteador de Alta Performance
+                                </li>
+                            </ul>
+
+                            <div class="mb-8 p-4 bg-gray-900 rounded-lg min-h-[140px]">
+                                <h4 class="font-bold text-white mb-3">Apps Inclusos:</h4>
+                                <div class="flex flex-wrap gap-x-2 gap-y-3">
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/7E22CE/FFFFFF?text=HBO"
+                                             alt="Logo HBO Max" title="HBO Max"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">HBO Max</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/FF6600/FFFFFF?text=DZR"
+                                             alt="Logo Deezer" title="Deezer Go"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">Deezer</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/004B8D/FF6600?text=UOL"
+                                             alt="Logo UOL Play" title="UOL Play"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">UOL Play</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Tenho%20interesse%20no%20plano%20de%20600%20MEGA%20por%20R$99,90."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-primary w-full block mt-4 text-sm py-3">
+                            Contratar Agora
+                        </a>
+                    </div>
+
+                    <!-- Plano 800 Mega -->
+                    <div class="scroll-reveal card rounded-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-display text-3xl font-bold text-white mb-2">800 MEGA</h3>
+                            <p class="text-gray-400 mb-6 text-sm">Velocidade máxima para streaming 8K e casa conectada.</p>
+
+                            <div class="mb-6 flex items-baseline">
+                                <span class="text-xl font-medium text-gray-400 mr-1 self-start pt-2">R$</span>
+                                <span class="font-display text-6xl leading-none font-bold text-white">129</span>
+                                <span class="text-xl font-medium text-gray-400 self-end pb-1">,90/mês</span>
+                            </div>
+
+                            <ul class="space-y-3 mb-6 text-gray-300">
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    100% Fibra Óptica
+                                </li>
+                                <li class="feature">
+                                    <i data-lucide="check-circle" class="w-5 h-5 text-accent-500 flex-shrink-0"></i>
+                                    Roteador de Alta Performance
+                                </li>
+                            </ul>
+
+                            <div class="mb-8 p-4 bg-gray-900 rounded-lg min-h-[140px]">
+                                <h4 class="font-bold text-white mb-3">Apps Inclusos:</h4>
+                                <div class="flex flex-wrap gap-x-2 gap-y-3">
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/7E22CE/FFFFFF?text=HBO"
+                                             alt="Logo HBO Max" title="HBO Max"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">HBO Max</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/FF6600/FFFFFF?text=DZR"
+                                             alt="Logo Deezer" title="Deezer Go"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">Deezer</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center w-14">
+                                        <img src="https://placehold.co/40x40/004B8D/FF6600?text=UOL"
+                                             alt="Logo UOL Play" title="UOL Play"
+                                             class="w-10 h-10 rounded-lg">
+                                        <span class="text-xs font-medium text-gray-400 mt-1">UOL Play</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Tenho%20interesse%20no%20plano%20de%20800%20MEGA%20por%20R$129,90."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-primary w-full block mt-4 text-sm py-3">
+                            Contratar Agora
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Conteúdo aba: Internet + TV -->
+            <div id="tab-internet-tv" class="tab-content hidden">
+                <div class="max-w-lg mx-auto">
+                    <div class="scroll-reveal card card-popular rounded-2xl shadow-2xl p-8 flex flex-col justify-between">
+                        <div>
+                            <span class="popular-badge bg-accent-500 text-white font-bold text-sm px-4 py-1 rounded-full shadow-lg">
+                                COMBO ESPECIAL
+                            </span>
+
+                            <h3 class="font-display text-3xl font-bold text-accent-500 mb-2">800 MEGA + TV</h3>
+                            <p class="text-gray-400 mb-6 text-sm">A ultravelocidade da fibra com o melhor da TV ao vivo e streaming pela SKY+.</p>
+
+                            <div class="mb-6 flex items-baseline">
+                                <span class="text-xl font-medium text-gray-400 mr-1 self-start pt-2">R$</span>
+                                <span class="font-display text-6xl leading-none font-bold text-white">179</span>
+                                <span class="text-xl font-medium text-gray-400 self-end pb-1">,90/mês</span>
+                            </div>
+
+                            <ul class="space-y-3 mb-6 text-gray-300">
+                                <li class="feature"><i data-lucide="check-circle" class="w-5 h-5 text-accent-500 mr-2 flex-shrink-0"></i> 100% Fibra Óptica</li>
+                                <li class="feature"><i data-lucide="check-circle" class="w-5 h-5 text-accent-500 mr-2 flex-shrink-0"></i> Roteador de Alta Performance</li>
+                                <li class="feature"><i data-lucide="tv" class="w-5 h-5 text-accent-500 mr-2 flex-shrink-0"></i> SKY+ (App de TV)</li>
+                                <li class="feature"><i data-lucide="plus" class="w-5 h-5 text-accent-500 mr-2 flex-shrink-0"></i> + um pacote premium de sua escolha</li>
+                            </ul>
+
+                            <!-- Bloco SKY+ -->
+                            <div class="mb-2 p-4 bg-gray-900 rounded-lg">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <img src="https://placehold.co/40x40/00A1D9/FFFFFF?text=SKY"
+                                         alt="Logo Sky+" title="Sky+"
+                                         class="w-10 h-10 rounded-lg">
+                                    <div>
+                                        <p class="text-white font-semibold leading-tight">SKY+</p>
+                                        <p class="text-gray-400 text-sm -mt-0.5">TV ao vivo e on-demand no app</p>
+                                    </div>
+                                </div>
+
+                                <p class="text-gray-300 text-sm mb-3">
+                                    Escolha <strong>1</strong> pacote premium incluso:
+                                </p>
+
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">UFC</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">Premiere</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">Telecine</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">Nosso Futebol</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">Combate</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">Paramount+</span>
+                                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/40 border border-gray-700">ESPN</span>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-500 text-xs mt-2">
+                                *Conteúdos e disponibilidade podem variar conforme região e programação dos canais/parceiros.
+                            </p>
+                        </div>
+
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Tenho%20interesse%20no%20combo%20800%20MEGA%20+%20TV%20com%20SKY+%20e%20um%20pacote%20premium."
+                           target="_blank" rel="noopener noreferrer"
+                           class="btn-primary w-full block mt-4 text-sm py-3">
+                            Contratar Combo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteúdo aba: Internet + Móvel -->
+            <div id="tab-internet-movel" class="tab-content hidden">
+                <div class="text-center py-16 card rounded-2xl">
+                    <i data-lucide="signal" class="w-20 h-20 text-accent-500 mx-auto mb-6"></i>
+                    <h3 class="section-title text-3xl mb-4">Combos de Internet + Móvel em Breve</h3>
+                    <p class="text-lg text-gray-400 max-w-lg mx-auto">
+                        Logo você poderá ter a fibra da Yes! em casa e no seu celular. Aguarde novidades!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="py-16 sm:py-24 bg-gray-900">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="font-bold text-accent-500 uppercase tracking-wider">Por que Yes!fibra?</span>
+                <h2 class="section-title text-4xl sm:text-5xl mt-2">Benefícios que só a Fibra te dá</h2>
+                <p class="text-lg text-gray-400 mt-6">
+                    Não é só velocidade, é uma nova experiência de conexão. Veja o que você ganha ao escolher a Yes!fibra.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Benefícios (6 cards) -->
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="sparkles" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">100% Fibra Óptica</h3>
+                    <p class="text-gray-400">Garantia de ultravelocidade e estabilidade, com a fibra indo direto até dentro da sua casa (FTTH).</p>
+                </div>
+
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="upload-cloud" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">Upload de Verdade</h3>
+                    <p class="text-gray-400">Envie arquivos pesados, faça lives e videochamadas em alta definição sem travamentos.</p>
+                </div>
+
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">Suporte Ágil e Humano</h3>
+                    <p class="text-gray-400">Fale com pessoas de verdade que entendem do assunto e resolvem seu problema.</p>
+                </div>
+
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="wifi" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">Roteador Wi-Fi 5G</h3>
+                    <p class="text-gray-400">Navegue na frequência de 5GHz (Dual Band) com menos interferência e muito mais velocidade no Wi-Fi.</p>
+                </div>
+
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="wrench" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">Instalação Grátis</h3>
+                    <p class="text-gray-400">Contrate hoje e não pague nada pela instalação. Nossa equipa cuida de tudo para você começar a usar.</p>
+                </div>
+
+                <div class="scroll-reveal card rounded-2xl p-8">
+                    <div class="benefit-icon">
+                        <i data-lucide="play-square" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-display text-2xl font-bold text-white mb-3">Apps de Conteúdo</h3>
+                    <p class="text-gray-400">Aproveite apps de filmes, séries, cursos e música inclusos no seu plano (consulte os planos).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-16 sm:py-24">
+        <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="section-title text-4xl sm:text-5xl">Perguntas Frequentes</h2>
+                <p class="text-lg text-gray-400 mt-6">
+                    Ainda tem dúvidas? Confira as respostas para as perguntas mais comuns sobre nossos serviços.
+                </p>
+            </div>
+
+            <div id="accordion-container" class="space-y-4">
+
+                <!-- Item FAQ -->
+                <div class="scroll-reveal card rounded-xl overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6 transition-colors duration-300 hover:bg-gray-800/50">
+                        <span class="font-display text-lg font-semibold text-white">O que é internet 100% Fibra Óptica (FTTH)?</span>
+                        <i data-lucide="chevron-down" class="accordion-arrow w-6 h-6 text-accent-500 flex-shrink-0"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-400 px-6 pb-6">
+                            FTTH (Fiber to the Home) significa "Fibra até a Casa". Diferente de outras tecnologias, o cabo de fibra óptica vai até dentro do seu modem,
+                            garantindo que não haja perda de velocidade ou interferência no caminho. É a conexão mais rápida e estável do mercado.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item FAQ -->
+                <div class="scroll-reveal card rounded-xl overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6 transition-colors duration-300 hover:bg-gray-800/50">
+                        <span class="font-display text-lg font-semibold text-white">Qual a diferença entre 2.4GHz e 5GHz no Wi-Fi?</span>
+                        <i data-lucide="chevron-down" class="accordion-arrow w-6 h-6 text-accent-500 flex-shrink-0"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="text-gray-400 px-6 pb-6 space-y-2">
+                            <p>O roteador Dual Band (incluso em planos selecionados) transmite em duas frequências:</p>
+                            <p><strong>2.4GHz:</strong> Tem maior alcance (atravessa mais paredes), mas é mais lenta e suscetível a interferências (de micro-ondas, telefones sem fio, etc).</p>
+                            <p><strong>5GHz (Wi-Fi 5G):</strong> Tem menor alcance, mas oferece velocidades muito mais altas e menos interferência. Ideal para smart TVs, videojogos e notebooks próximos ao roteador.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item FAQ -->
+                <div class="scroll-reveal card rounded-xl overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6 transition-colors duration-300 hover:bg-gray-800/50">
+                        <span class="font-display text-lg font-semibold text-white">Os planos possuem fidelidade?</span>
+                        <i data-lucide="chevron-down" class="accordion-arrow w-6 h-6 text-accent-500 flex-shrink-0"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-400 px-6 pb-6">
+                            Sim. Para garantir os benefícios, como a instalação gratuita e os valores promocionais, nossos planos possuem um período de fidelidade de 12 meses.
+                            Em caso de cancelamento antes desse prazo, será aplicada uma multa proporcional ao tempo restante,
+                            conforme descrito no
+                            <a href="contrato.html"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="text-accent-500 hover:underline font-semibold">Contrato de Adesão</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item FAQ -->
+                <div class="scroll-reveal card rounded-xl overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6 transition-colors duration-300 hover:bg-gray-800/50">
+                        <span class="font-display text-lg font-semibold text-white">Como funciona o Suporte Técnico?</span>
+                        <i data-lucide="chevron-down" class="accordion-arrow w-6 h-6 text-accent-500 flex-shrink-0"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-400 px-6 pb-6">
+                            Nosso suporte técnico está disponível através do link de WhatsApp no topo e rodapé do site.
+                            Oferecemos atendimento humano para resolver problemas na nossa rede.
+                            Visitas técnicas para problemas internos (ex: configuração do seu computador) podem ter custos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item FAQ -->
+                <div class="scroll-reveal card rounded-xl overflow-hidden">
+                    <button class="accordion-button w-full flex justify-between items-center text-left p-6 transition-colors duration-300 hover:bg-gray-800/50">
+                        <span class="font-display text-lg font-semibold text-white">Em quanto tempo a instalação é feita?</span>
+                        <i data-lucide="chevron-down" class="accordion-arrow w-6 h-6 text-accent-500 flex-shrink-0"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-400 px-6 pb-6">
+                            Após a confirmação da contratação e viabilidade técnica,
+                            o prazo médio para instalação é de 3 a 5 dias úteis.
+                            Nossa equipe entrará em contato para agendar o melhor dia e horário para si.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-primary-600 border-t-4 border-accent-500 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Coluna 1 -->
+            <div class="space-y-4">
+                <a href="#" class="flex items-center space-x-2" aria-label="Yes!fibra - Página Inicial">
+                    <span class="font-display text-3xl font-bold text-white tracking-wide">
+                        Yes!<span class="text-accent-500">fibra</span>
+                    </span>
+                </a>
+                <p class="text-gray-400 text-sm max-w-xs">
+                    A revolução da fibra óptica em São Paulo. Conectando o seu mundo com ultravelocidade.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-accent-500" aria-label="Facebook">
+                        <i data-lucide="facebook" class="w-6 h-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent-500" aria-label="Instagram">
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+                    <a href="https://wa.me/5500999998888"
+                       target="_blank" rel="noopener noreferrer"
+                       class="text-gray-400 hover:text-accent-500"
+                       aria-label="WhatsApp">
+                        <i data-lucide="message-circle" class="w-6 h-6"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2 -->
+            <div class="footer-col">
+                <h4 class="text-white font-bold mb-4">Navegação</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#hero" class="text-gray-400 hover:text-accent-500">Início</a></li>
+                    <li><a href="#planos" class="text-gray-400 hover:text-accent-500">Planos</a></li>
+                    <li><a href="#beneficios" class="text-gray-400 hover:text-accent-500">Benefícios</a></li>
+                    <li><a href="#faq" class="text-gray-400 hover:text-accent-500">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3 -->
+            <div class="footer-col">
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="termo.html" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-500">Termos de Serviço</a></li>
+                    <li><a href="politica.html" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-500">Política de Privacidade</a></li>
+                    <li><a href="contrato.html" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent-500">Contrato de Adesão</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4 -->
+            <div class="footer-col">
+                <h4 class="text-white font-bold mb-4">Atendimento</h4>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center text-gray-400">
+                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-accent-500 flex-shrink-0"></i>
+                        <a href="https://wa.me/5500999998888?text=Olá!%20Preciso%20de%20suporte."
+                           target="_blank" rel="noopener noreferrer"
+                           class="hover:text-accent-500">
+                           Suporte WhatsApp
+                        </a>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2 text-accent-500 flex-shrink-0"></i>
+                        <span>(00) 9999-8888</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i data-lucide="mail" class="w-4 h-4 mr-2 text-accent-500 flex-shrink-0"></i>
+                        <span>contato@yesfibra.com.br</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="mt-10 border-t border-gray-700 pt-6 text-center">
+            <p class="text-sm text-gray-500">
+                &copy; <span id="current-year"></span> Yes!fibra (Razão Social aqui) - CNPJ 00.000.000/0001-00.
+                Todos os direitos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Botões flutuantes -->
+<a class="fab"
+   href="https://wa.me/5500999998888?text=Olá!%20Quero%20assinar%20Yes!fibra"
+   target="_blank" rel="noopener"
+   aria-label="WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6 text-accent-500"></i>
+</a>
+
+<button id="backtop" class="backtop" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <i data-lucide="arrow-up" class="w-5 h-5 text-gray-300"></i>
+</button>
+
+<!-- Swiper.js JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Seu JS externo -->
+<script src="script.js"></script>
+</body>
+</html>

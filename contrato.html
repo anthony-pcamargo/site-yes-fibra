@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de Adesão - Yes!fibra</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Lucide Icons (Necessário para os ícones) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        // Configuração do Tailwind (mesma do site principal)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': {
+                            '500': '#002D5A', // Azul Escuro Principal
+                            '600': '#001F3D',
+                        },
+                        'accent': {
+                            '500': '#FF6600', // Laranja Vibrante
+                            '600': '#E65C00', 
+                        }
+                    },
+                },
+            },
+            darkMode: 'class', 
+        }
+    </script>
+    
+    <style>
+        /* Fundo escuro padrão */
+        body {
+            background-color: #0f141a;
+            color: #e2e8f0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Card de conteúdo principal */
+        .content-card {
+            background-color: #161b22; /* Fundo dos cards do site principal */
+            border: 1px solid #30363d; /* Borda sutil */
+        }
+
+        /* Estilização "Prose" para o texto legal (melhora a legibilidade) */
+        .prose-dark h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem; /* 40px */
+            font-weight: 800;
+            color: #f8fafc; /* slate-50 */
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem; /* 24px */
+            font-weight: 700;
+            color: #FF6600; /* Laranja (accent-500) */
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+        .prose-dark h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem; /* 20px */
+            font-weight: 600;
+            color: #f1f5f9; /* slate-100 */
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark p {
+            font-size: 1rem; /* 16px */
+            line-height: 1.75; /* leading-relaxed */
+            color: #cbd5e1; /* slate-300 */
+            margin-bottom: 1.25rem;
+        }
+        .prose-dark ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            color: #cbd5e1; /* slate-300 */
+            margin-bottom: 1.25rem;
+        }
+        .prose-dark li {
+            margin-bottom: 0.5rem;
+        }
+        .prose-dark a {
+            color: #FF6600; /* Laranja (accent-500) */
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .prose-dark a:hover {
+            text-decoration: underline;
+            color: #E65C00; /* Laranja mais escuro */
+        }
+        .prose-dark strong {
+            color: #f1f5f9; /* slate-100 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+<!-- 
+  HEADER SIMPLIFICADO
+-->
+<header class="sticky top-0 z-50 bg-primary-500/95 backdrop-blur-sm shadow-xl border-b border-primary-600">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <!-- Logo -->
+            <a href="yesfibra.html" class="flex items-center space-x-2" aria-label="Yes!fibra - Página Inicial">
+                <span class="font-display text-3xl font-bold text-white tracking-wide">Yes!<span class="text-accent-500">fibra</span></span>
+            </a>
+            
+            <!-- Botão Voltar -->
+            <a href="yesfibra.html" class="flex items-center text-sm font-bold bg-gray-700/50 text-white px-5 py-2.5 rounded-full shadow-md hover:bg-gray-700 transition-all duration-300">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Voltar ao Site
+            </a>
+        </div>
+    </nav>
+</header>
+
+<!-- 
+  CONTEÚDO PRINCIPAL (Contrato)
+-->
+<main class="py-16 sm:py-24">
+    <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <!-- Card de Conteúdo -->
+        <div class="content-card rounded-2xl shadow-2xl p-8 md:p-12 lg:p-16">
+            <div class="prose-dark">
+                
+                <h1>Contrato de Adesão</h1>
+                <p class="text-base text-gray-400">Última atualização: 29 de Outubro de 2025</p>
+
+                <p>Este é o Contrato de Prestação de Serviço de Comunicação Multimídia (SCM) que celebram entre si:</p>
+                <p><strong>CONTRATADA:</strong> <strong>YES!FIBRA (RAZÃO SOCIAL AQUI)</strong>, inscrita no CNPJ sob o nº 00.000.000/0001-00, com sede na [Endereço da Empresa], doravante denominada simplesmente <strong>YES!FIBRA</strong>.</p>
+                <p><strong>CONTRATANTE:</strong> <strong>O CLIENTE</strong>, pessoa física ou jurídica, cujos dados foram devidamente preenchidos e fornecidos no momento da contratação online ou via canais de atendimento, doravante denominado <strong>CLIENTE</strong>.</p>
+                <p>Ao clicar em "Aceito", "Contratar" ou ao assinar o termo de instalação, o CLIENTE declara ter lido e concordado com todos os termos e condições deste Contrato, dos <a href="termos.html" target="_blank" rel="noopener noreferrer">Termos de Serviço</a> e da <a href="politica.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>.</p>
+
+                <h2>CLÁUSULA 1ª: DO OBJETO</h2>
+                <p><strong>1.1.</strong> O objeto deste contrato é a prestação, pela YES!FIBRA ao CLIENTE, do Serviço de Comunicação Multimídia (SCM), fornecendo acesso à internet em banda larga através de tecnologia de fibra óptica (FTTH - Fiber to the Home) no endereço de instalação indicado pelo CLIENTE.</p>
+                <p><strong>1.2.</strong> O plano de serviço, com suas respectivas velocidades de download e upload, valores e benefícios (como apps inclusos), é aquele escolhido pelo CLIENTE no momento da contratação e descrito na nota fiscal ou fatura mensal.</p>
+
+                <h2>CLÁUSULA 2ª: DOS EQUIPAMENTOS (COMODATO)</h2>
+                <p><strong>2.1.</strong> Para a fruição do serviço, a YES!FIBRA cederá ao CLIENTE, em regime de <strong>COMODATO</strong> (empréstimo gratuito), 1 (um) equipamento modem/roteador Wi-Fi.</p>
+                <p><strong>2.2.</strong> O CLIENTE é fiel depositário do equipamento, devendo zelar por sua integridade. Em caso de dano (por mau uso, queda, líquido) ou extravio, será cobrada uma taxa de substituição no valor estipulado em tabela vigente.</p>
+                <p><strong>2.3.</strong> Ao término do contrato, por qualquer motivo, o CLIENTE se compromete a devolver o equipamento em perfeitas condições (considerando o desgaste natural) em até 10 dias úteis, sob pena de pagamento da taxa mencionada no item 2.2.</p>
+
+                <h2>CLÁUSULA 3ª: DOS VALORES E PAGAMENTO</h2>
+                <p><strong>3.1.</strong> O CLIENTE pagará à YES!FIBRA o valor mensal correspondente ao plano contratado, acrescido de eventuais serviços adicionais, conforme a data de vencimento escolhida.</p>
+                <p><strong>3.2.</strong> O não pagamento da fatura na data de vencimento sujeitará o CLIENTE a:
+                    <ul>
+                        <li>(a) Multa de 2% (dois por cento) sobre o valor devido;</li>
+                        <li>(b) Juros de mora de 1% (um por cento) ao mês, pro rata die;</li>
+                        <li>(c) Suspensão parcial (redução de velocidade) do serviço após 15 (quinze) dias de atraso;</li>
+                        <li>(d) Suspensão total do serviço após 30 (trinta) dias de atraso;</li>
+                        <li>(e) Rescisão do contrato e negativação nos órgãos de crédito após 60 (sessenta) dias de atraso.</li>
+                    </ul>
+                </p>
+                <p><strong>3.3.</strong> Os valores dos planos serão reajustados anualmente, ou na menor periodicidade permitida por lei, com base na variação do índice IGP-M/FGV ou outro que venha a substituí-lo.</p>
+
+                <h2>CLÁUSULA 4ª: DO PRAZO E DA FIDELIDADE</h2>
+                <p><strong>4.1.</strong> Este contrato é celebrado por prazo indeterminado, entrando em vigor na data da ativação do serviço.</p>
+                <p><strong>4.2.</strong> Caso o CLIENTE tenha contratado um plano com benefício promocional (como isenção da taxa de instalação ou desconto na mensalidade), o CLIENTE concorda em cumprir um <strong>PERÍODO DE PERMANÊNCIA MÍNIMA (FIDELIDADE) de 12 (doze) meses</strong>, contados a partir da data de ativação.</p>
+
+                <h2>CLÁUSULA 5ª: DA RESCISÃO E MULTA DE FIDELIDADE</h2>
+                <p><strong>5.1.</strong> O CLIENTE poderá rescindir este contrato a qualquer tempo, mediante aviso prévio de 30 dias.</p>
+                <p><strong>5.2.</strong> Caso a rescisão ocorra por solicitação do CLIENTE <strong>antes</strong> do término do período de fidelidade (Cláusula 4.2), será cobrada <strong>MULTA POR QUEBRA DE FIDELIDADE</strong>, cujo valor será proporcional ao benefício concedido e ao tempo restante de contrato.</p>
+                <p><strong>5.3.</strong> A YES!FIBRA poderá rescindir o contrato imediatamente, independente de aviso, caso o CLIENTE viole as obrigações contratuais, especialmente o uso indevido do serviço (Cláusula 3.2 dos Termos de Serviço) ou por inadimplência superior a 60 dias.</p>
+
+                <h2>CLÁUSULA 6ª: DO SUPORTE TÉCNICO</h2>
+                <p><strong>6.1.</strong> A YES!FIBRA prestará suporte técnico gratuito para problemas de conexão originados em sua rede externa ou no equipamento em comodato.</p>
+                <p><strong>6.2.</strong> Não estão cobertos pelo suporte gratuito problemas na rede interna do CLIENTE (vírus, configuração de computadores, impressoras, repetidores de sinal particulares, etc.). Visitas técnicas para estes fins poderão ser cobradas.</p>
+
+                <h2>CLÁUSULA 7ª: DO FORO</h2>
+                <p>Fica eleito o foro da comarca do endereço de instalação do CLIENTE para dirimir quaisquer questões oriundas deste contrato, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+                <p>E, por estarem justos e contratados, o CLIENTE aceita digitalmente o presente contrato ao prosseguir com a contratação do serviço.</p>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- 
+  FOOTER SIMPLIFICADO
+-->
+<footer class="bg-primary-600 border-t-4 border-accent-500 mt-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-sm text-gray-500">&copy; <span id="current-year"></span> Yes!fibra (Razão Social aqui) - CNPJ 00.000.000/0001-00. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. Inicializa Ícones do Lucide
+        try {
+            lucide.createIcons();
+        } catch (e) {
+            console.error("Erro ao inicializar Lucide Icons:", e);
+        }
+
+        // 2. Define o ano atual no footer
+        const currentYearEl = document.getElementById('current-year');
+        if (currentYearEl) {
+            currentYearEl.textContent = new Date().getFullYear();
+        }
+    });
+</script>
+
+</body>
+</html>
