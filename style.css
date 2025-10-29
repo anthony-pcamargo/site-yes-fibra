@@ -355,3 +355,42 @@ body {
     opacity:1;
     pointer-events:auto;
 }
+
+/* ===================== */
+/*    RESPONSIVIDADE     */
+/* ===================== */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .card { max-width: 520px; margin-inline: auto; }
+}
+
+/* Celulares (≤ 768px) */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero-slide { height: 60vh; min-height: 440px; padding: 1.25rem; }
+  .hero-slide-content { padding: .5rem; }
+  .hero-slide-content h1,
+  .hero-slide-content h2 { font-size: clamp(1.6rem, 5vw, 2rem); line-height: 1.2; }
+  .hero-slide-content p { font-size: 1rem; }
+
+  /* Tabs */
+  .tabs-wrap { flex-wrap: wrap; gap: .6rem; padding: .6rem; }
+  .tab-btn { width: 100%; text-align: center; }
+
+  /* Cards e botões */
+  .card { max-width: 95%; margin-inline: auto; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+
+  /* Ícones/benefícios um pouco menores */
+  .benefit-icon { width: 3rem; height: 3rem; }
+
+  /* Footer */
+  .footer-col { text-align: center; }
+}
+
+/* Telas muito pequenas (≤ 390px) */
+@media (max-width: 390px) {
+  .popular-badge { top: -12px; font-size: .75rem; }
+  .tab-btn { padding: .5rem .75rem; }
+}
